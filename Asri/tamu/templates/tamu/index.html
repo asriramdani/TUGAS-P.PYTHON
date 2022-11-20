@@ -1,0 +1,52 @@
+{% load static %}
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Buku Tamu</title>
+      <!-- CSS 1 -->
+      <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+      <!-- CSS BOOTSTRAP -->
+      <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}"/>
+
+    </head>
+    <body>
+    <img id="banner" src="{%static 'tamu/img/crud.jpg'%}" alt="">
+    <div id="menu">
+        <ul>
+            <li><a href="/" class="">Home</a></li>
+            <li><a href="/about/" class="">About</a></li>
+            <li><a href="/buku/" class="">Daftar Buku</a></li>
+            <li><a href="/tamu/" class="">Buku Tamu</a></li>
+        </ul>
+    </div>
+    <!-- CONTAINER BOOTSTRAP -->
+    <!--https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
+    <div class="container">
+        <br>
+            <form method="POST">
+                {% csrf_token %}
+                <table>
+                    {{BukuTamu.as_table}}
+                </table>
+                <button class="btn btn-succes" type="submit">Simpan</button>
+            </form>
+        </br>
+    </div>
+    <!-- END CONTAINER BOOTSTRAP -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <span class="text-dark">Copyright 2022</span>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- JS BOOTSTRAP -->
+    <script scr="{%static 'vendor/boostrap/boostrap.js'%}" type="text/javascripts"></script>
+    <script scr="{%static 'vendor/boostrap/jquery-3.3.1.slim.min.js'%}" type="text/javascripts"></script>
+    <script scr="{%static 'vendor/boostrap/popper.min.js'%}" type="text/javascripts"></script>
+
+</body>
+
+</html>

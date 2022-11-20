@@ -1,0 +1,63 @@
+{% load static %} 
+<DOCTYPE html> 
+<head> 
+    <title>About</title> 
+ <!-- CSS 1 -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+ <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}"> 
+</head> 
+<body> 
+    <img id="banner" src="{% static 'about/img/about.jpg' %}" alt=""> 
+    <div id="menu"> 
+      <ul> 
+        <li><a href="/">Home</a></li> 
+        <li><a href="/about/">About</a></li> 
+        <li><a href="/buku/">Buku</a></li> 
+        <li><a href="/tamu/">Buku Tamu</a></li> 
+        
+    </div> 
+ <!-- KELAS CONTAINER BOOTSTRAP -->
+    <div class="container"> 
+        <p></p> 
+          <div class="alert alert-success" role="alert"> 
+          <h4 class="alert-heading">About Django</h4> 
+          <p>Django itu merupakan Web Framework open source berbasis Python,
+ digagas oleh Jacob Kaplan Moss dan Adrian Holovaty. Django menjadi salah satu
+ Web Framework terbesar yang dimiliki Python baik dari segi komunitas maupun W
+eb Framework itu sendiri. Django memiliki sebuah badan yang dinamakan dengan D
+jango Software Foundation yang bertugas mengelola pendanaan untuk kelangsungan
+ pengembangan Django. 
+ Django memiliki tagline "The web framework for perfectioni
+sts with deadlines", bagaimana tidak, karena secara default Django sudah memil
+iki berbagai modul umum yang biasa digunakan ketika mengembangkan aplikasi web
+. Dengan Django saja, Anda sudah dapat menggunakan autentikasi sendiri, dan me
+ndapatkan halaman admin sesuai dengan model yang kamu definisikan di dalam apl
+ikasi! 
+ Django banyak dipakai oleh perusahaan internet besar belak
+angan ini seperti Instagram, Discus, Mozzila dan masih banyak lagi. Django di 
+ciptakan untuk memudahkan developer membuat aplikasi web dengan cepat, mudah d
+an dengan kode yang lebih sedikit.</p> 
+          <hr> 
+ <p class="mb-0">Django awalnya dikembangkan pada tahun 2003 dan 2005 oleh beberapa web deve
+loper yang bertugas membuat dan merawat web portal (newspaper website). Setela
+h membuat beberapa website, orang-orang tersebut mulai membuat ulang kode-kode yang pernah mereka tulis dengan menerapkan beberapa design pattern. Lalu 
+disebarkan sebagai project open source dengan nama “Django” pada bulan Juli 20
+05.</p> 
+      </div> 
+    </div> 
+ <!-- FOOTER -->
+    <footer class="footer"> 
+          <div class="container"> 
+              <span class="text-dark">Copyright 2022</span> 
+          </div> 
+    </footer> 
+ 
+ <!-- JS BOOTSTRAP -->
+    <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascript"></script> 
+    <script src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/jav
+ascript"></script> 
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/java
+script"></script> 
+</body> 
+</html>
